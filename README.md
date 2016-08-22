@@ -10,7 +10,7 @@ Wir vergleichen in Zweiergruppen Text auf dem Smartphone und auf dem Laptop: Was
 
 Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist nicht standardisiert. Durch verschieden aufgelöste Screens und je nach Browser gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
 
-### Vorbereitung
+### Vorbereiten
 
 * Datei XXXXX auf ZHdK-People-Account laden.
 * URL in Laptop- und Smartphone-Browser öffnen.
@@ -27,7 +27,7 @@ Es reicht die Regeln für Body zu bestimmen. Der Wert wird 1:1 auf Paragraphen a
 ```
 body {
     font-size: 16px; /* Für die Übung nehmen wir Pixelwerte. */
-    line-height: 1.2; /* Dieser Wert wird mit der Schriftgrösse multipliziert. Es wird keine Masseinheit angegeben.
+    line-height: 1.2; /* Dieser Wert wird mit der Schriftgrösse multipliziert. */
 }
 ```
 
@@ -61,8 +61,16 @@ http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/
 
 
 ## Hausaufgabe
-CSS-Eigenschaften für Text repetieren. Text lesen: 100000 Character Alphabet (Bringhurst) bis (und mit) 9.3
 
-## Hausaufgabe  auf XXX.
+* CSS-Eigenschaften für Text repetieren.
+* Text lesen: Robert Bringhurst, «The 100’000 Character Alphabet» – bis (und mit) 9.3
+
+## Hausaufgabe  auf den 21. Oktober
+
 Pixate installieren, vertraut machen mit Grundlagen
 
+### Links
+
+* [Pixate](http://pixate.com)
+* [Introduction](http://help.pixate.com/knowledgebase/articles/461798-1-introduction)
+* [Concepts to understand before using Pixate](http://help.pixate.com/knowledgebase/articles/461806-2-high-level-concepts)
