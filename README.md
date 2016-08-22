@@ -4,9 +4,11 @@ Zur Vorbereitung des Themas Webfonts wiederholen frischen wir unsere Kenntnisse 
 
 ## Übung 1
 
-Es geht darum, gute Schriftgrössen für den Screen zu bestimmen. Gleichzeitig möchte ich die Aufmerksamkeit auf einige Punkte lenken, die wir im alltäglichen Gebrauch nicht bewusst wahrnehmen.
+Es geht darum, gute Schriftgrössen für verschiedene Screens zu bestimmen. Gleichzeitig möchte ich die Aufmerksamkeit auf einige Punkte lenken, die wir im alltäglichen Gebrauch nicht bewusst wahrnehmen.
 
-Wir vergleichen dazu einen Text auf dem Smartphone und auf dem Laptop: Was ist eine angenehm zu lesende Schriftgrösse, wie lange ist die Zeile?
+Wir vergleichen in Zweiergruppen Text auf dem Smartphone und auf dem Laptop: Was ist eine angenehm zu lesende Schriftgrösse, wie lange ist die Zeile?
+
+Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist nicht standardisiert. Durch verschieden aufgelöste Screens und je nach Browser gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
 
 ### Vorbereitung
 
@@ -15,28 +17,32 @@ Wir vergleichen dazu einen Text auf dem Smartphone und auf dem Laptop: Was ist e
 
 *Vorsicht: URL mit `http` schreiben, nicht mit `https`. Und: `admin` hat im URL-Pfad nichts zu suchen.*
 
-In Zweiergruppen: 
-
 ### Einstellen
 
 Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet.
+Die länge der Zeile interessiert uns im Moment nicht. Am Smartphone ergibt sie sich von alleine, am Laptop ändern wir die Fenstergrösse von Hand.
+
+Es reicht die Regeln für Body zu bestimmen. Der Wert wird 1:1 auf Paragraphen angewendet, Überschriften werden proportional gröser dargestellt. Sonderregeln für  `H1` und `h2` können für diese Übung vernachlässigt werden.
+
+```
+body {
+    font-size: 16px; /* Für die Übung nehmen wir Pixelwerte. */
+    line-height: 1.2; /* Dieser Wert wird mit der Schriftgrösse multipliziert. Es wird keine Masseinheit angegeben.
+}
+```
 
 ### Messen
 
 * Abstand zum Laptop beim Lesen
 * Abstand zum Smartphone beim Lesen
 
-Diese Werte in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) eintragen.
+Diese Werte und die Werte für `font-size` und `line-height` tragen wir in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) ein.
 
-Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilieund den gleichen Schnitt (Georgia, normal).
+Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und den gleichen Schnitt (Georgia, normal).
 
 Zur eigenen Referenz: Smartphone auf Taschenbuch legen und Schriftgrössen vergleichen.
 
-
-Verschiedene Schriftgrössen probieren. Anfangen bei 16px, dann Schrittweise bis 12px / 20px oder was auch immer als gut empfunden wird. Dies für Laptop und Phon sep
-
-Aufschreiben: Schriftgrössen, die man als ideal zum Lesen empfindet
-Optional: Zeilenhöhe
+Verschiedene Schriftgrössen probieren. Anfangen bei 16px, dann Schrittweise bis 12px / 20px oder was auch immer als gut empfunden wird. Dies für Laptop und Phon separat wiederholen.
 
 Tabelle: Name, Laptop, Smartphone, Distanz zum Screen, Schriftgrösse
 
@@ -54,9 +60,9 @@ https://github.com/djrrb/Bungee
 http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/
 
 
-Hausaufgabe:
+## Hausaufgabe
 CSS-Eigenschaften für Text repetieren. Text lesen: 100000 Character Alphabet (Bringhurst) bis (und mit) 9.3
 
-Hausaufgabe  auf XXX.
+## Hausaufgabe  auf XXX.
 Pixate installieren, vertraut machen mit Grundlagen
 
