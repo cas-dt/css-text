@@ -17,6 +17,10 @@ Wir vergleichen dazu einen Text auf dem Smartphone und auf dem Laptop: Was ist e
 
 In Zweiergruppen: 
 
+### Einstellen
+
+Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet.
+
 Messen
 * Abstand zum Laptop beim Lesen
 * Abstand zum Smartphone beim Lesen
