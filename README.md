@@ -44,7 +44,9 @@ Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebu
 
 ## Übung 2, ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
 
-### vw, vh, vmax und vim
+Bei der hier beschriebenen Methode handelt es sich um einen von verschiedenen Experimentellen Ansätzen (siehe Links). Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
+
+### Viewport Units: vw, vh, vmax und vim
 
 Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
 
