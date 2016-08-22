@@ -40,17 +40,13 @@ Diese Werte und die Werte für `font-size` und `line-height` tragen wir in [dies
 
 Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und den gleichen Schnitt (Georgia, normal).
 
-Zur eigenen Referenz: Smartphone auf Taschenbuch legen und Schriftgrössen vergleichen.
-
-Verschiedene Schriftgrössen probieren. Anfangen bei 16px, dann Schrittweise bis 12px / 20px oder was auch immer als gut empfunden wird. Dies für Laptop und Phon separat wiederholen.
-
-Tabelle: Name, Laptop, Smartphone, Distanz zum Screen, Schriftgrösse
+Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
 
 ## Übung 2, ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
 
 ### vw, vh, vmax und vim
 
-Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: vw steht für ‘viewport width’ (Fensterbreite), vh für ‘viewport height’ (Fensterhöhe), vmin wird mit vw oder vh ersetzt, je nachdem welcher Wert kleiner ist, vmax mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1vw ist 1% der Fensterbreite, 100vw ist die ganze Breite des Viewports.
+Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
 
 ### Ermittlung eines Werts mittels calc
 
