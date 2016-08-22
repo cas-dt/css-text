@@ -13,7 +13,7 @@ Wir vergleichen dazu einen Text auf dem Smartphone und auf dem Laptop: Was ist e
 * Datei XXXXX auf ZHdK-People-Account laden.
 * URL in Laptop- und Smartphone-Browser öffnen.
 
-*Vorsicht: URL mit http schreiben, nicht mit https. «Admin» hat im URL-Pfad nichts zu suchen.*
+*Vorsicht: URL mit `http` schreiben, nicht mit `https`. Und: `admin` hat im URL-Pfad nichts zu suchen.*
 
 In Zweiergruppen: 
 
@@ -21,7 +21,8 @@ In Zweiergruppen:
 
 Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet.
 
-Messen
+### Messen
+
 * Abstand zum Laptop beim Lesen
 * Abstand zum Smartphone beim Lesen
 
