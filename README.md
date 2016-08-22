@@ -54,23 +54,41 @@ https://www.smashingmagazine.com/2016/05/fluid-typography/
 https://vimeo.com/160593680
 https://github.com/bramstein/postcss-scale
 
-Übung 3
-https://djr.com/
-https://github.com/djrrb/Bungee
-http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/
+## Übung 3
 
+David Jonathan Ross hat vor kurzem die Schrift Bungee  veröffentlicht. Zur Entspannung versuchen wir, die Schrift herunterzuladen und in eine Website einzubauen.
+
+Es braucht zwei CSS Eigenschaften, um Text von oben nach unten zu schreiben: Eine für die vertikale Ausrichtung der Zeile, eine für die vertikale Ausrichtung der Buchstaben.
+
+```
+p {
+    writing-mode: vertical-rl
+    text-orientation: upright
+}
+```
+
+Der Font ist ausführlich dokumentiert (siehe Links).
+
+* [David Jonathan Ross](https://djr.com/)
+* [Bungee](https://github.com/djrrb/Bungee)
+* [Bungee Dokumentation](https://github.com/djrrb/Bungee/tree/master/documentation)
+* [Bungee Dokumentation Web](https://github.com/djrrb/Bungee/blob/master/documentation/3-vertical-text.md#on-the-web)
+* [Bungee.js – Script zur Konfiguration der Schnitte etc.](https://github.com/djrrb/Bungee/tree/master/resources/web)
+* [Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
+* [Lizenz](http://scripts.sil.org/OFL)
 
 ## Hausaufgabe
 
 * CSS-Eigenschaften für Text repetieren.
 * Text lesen: Robert Bringhurst, «The 100’000 Character Alphabet» – bis (und mit) 9.3
 
-## Hausaufgabe  auf den 21. Oktober
+## Hausaufgabe auf den 21. Oktober
 
-Pixate installieren, vertraut machen mit Grundlagen
+Pixate installieren, vertraut machen mit Grundlagen.
 
 ### Links
 
 * [Pixate](http://pixate.com)
 * [Introduction](http://help.pixate.com/knowledgebase/articles/461798-1-introduction)
 * [Concepts to understand before using Pixate](http://help.pixate.com/knowledgebase/articles/461806-2-high-level-concepts)
+* [Video Tutorials](http://www.pixate.com/education/video-tutorials/)
