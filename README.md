@@ -46,17 +46,36 @@ Verschiedene Schriftgrössen probieren. Anfangen bei 16px, dann Schrittweise bis
 
 Tabelle: Name, Laptop, Smartphone, Distanz zum Screen, Schriftgrösse
 
-Übung 2
-https://vasilis.nl/nerd/variable-line-height/
-http://artequalswork.com/posts/fluid-type/
-http://codepen.io/CrocoDillon/pen/fBJxu
-https://www.smashingmagazine.com/2016/05/fluid-typography/
-https://vimeo.com/160593680
-https://github.com/bramstein/postcss-scale
+## Übung 2, ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
 
-## Übung 3
+### vw, vh, vmax und vim
 
-David Jonathan Ross hat vor kurzem die Schrift Bungee  veröffentlicht. Zur Entspannung versuchen wir, die Schrift herunterzuladen und in eine Website einzubauen.
+Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: vw steht für ‘viewport width’ (Fensterbreite), vh für ‘viewport height’ (Fensterhöhe), vmin wird mit vw oder vh ersetzt, je nachdem welcher Wert kleiner ist, vmax mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1vw ist 1% der Fensterbreite, 100vw ist die ganze Breite des Viewports.
+
+### Ermittlung eines Werts mittels calc
+
+Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines numerischen Wertes eine Formel zuzuordnen.
+
+```
+p {
+    font-size: calc(1em + 1vw);
+}
+```
+
+* [Vasilis van Gemert – Variable line-height](https://vasilis.nl/nerd/variable-line-height/)
+* [Nathan Ford – Fluid typography with viewport units](http://artequalswork.com/posts/fluid-type/)
+* [Dillon de Voor – Mixing vw and vh in font-size](http://codepen.io/CrocoDillon/pen/fBJxu)
+* [Smashing Magazine – Truly Fluid Typography With vh And vw Units](https://www.smashingmagazine.com/2016/05/fluid-typography/)
+* [Vasilis van Gemert – Look, no media queries](https://vimeo.com/160593680)
+* [Tim Brown – Typesetting Body Text for the Web](https://vimeo.com/156203722)
+* [Bram Stein – PostCSS plugin to scale values](https://github.com/bramstein/postcss-scale)
+* [Mozilla Developer Network – Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+
+## Übung 3, unser erster Webfont
+
+David Jonathan Ross hat vor kurzem die Schrift Bungee unter einer Open Source Lizenz veröffentlicht (und ausserdem als Google Font). Zur Entspannung versuchen wir, die Schrift herunterzuladen und in eine Website einzubauen.
+
+Es geht nicht darum, zu verstehen, was wie funktioniert, sondern darum, das Ding zum Laufen zu bringen.
 
 Es braucht zwei CSS Eigenschaften, um Text von oben nach unten zu schreiben: Eine für die vertikale Ausrichtung der Zeile, eine für die vertikale Ausrichtung der Buchstaben.
 
