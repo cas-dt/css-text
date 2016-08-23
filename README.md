@@ -1,6 +1,6 @@
 # Repetition Textformatierung mit CSS
 
-Zur Vorbereitung des Themas Webfonts wiederholen frischen wir unsere Kenntnisse von CSS bezüglich Schrift auf.
+Zur Vorbereitung des Themas Webfonts frischen wir unsere Kenntnisse über CSS bezüglich Schrift auf.
 
 ## Übung 1
 
@@ -42,6 +42,11 @@ Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und
 
 Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
 
+### Links
+
+* [Video: Nick Sherman – Variable Fonts for Responsive](https://vimeo.com/123813231)
+* [Size Calculator](https://sizecalc.com/)
+
 ## Übung 2, ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
 
 Bei der hier beschriebenen Methode handelt es sich um einen von verschiedenen Experimentellen Ansätzen (siehe Links). Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
@@ -64,8 +69,8 @@ p {
 * [Nathan Ford – Fluid typography with viewport units](http://artequalswork.com/posts/fluid-type/)
 * [Dillon de Voor – Mixing vw and vh in font-size](http://codepen.io/CrocoDillon/pen/fBJxu)
 * [Smashing Magazine – Truly Fluid Typography With vh And vw Units](https://www.smashingmagazine.com/2016/05/fluid-typography/)
-* [Vasilis van Gemert – Look, no media queries](https://vimeo.com/160593680)
-* [Tim Brown – Typesetting Body Text for the Web](https://vimeo.com/156203722)
+* [Video: Vasilis van Gemert – Look, no media queries](https://vimeo.com/160593680)
+* [Video: Tim Brown – Typesetting Body Text for the Web](https://vimeo.com/156203722)
 * [Bram Stein – PostCSS plugin to scale values](https://github.com/bramstein/postcss-scale)
 * [Mozilla Developer Network – Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
@@ -91,7 +96,7 @@ Der Font ist ausführlich dokumentiert (siehe Links).
 * [Bungee Dokumentation](https://github.com/djrrb/Bungee/tree/master/documentation)
 * [Bungee Dokumentation Web](https://github.com/djrrb/Bungee/blob/master/documentation/3-vertical-text.md#on-the-web)
 * [Bungee.js – Script zur Konfiguration der Schnitte etc.](https://github.com/djrrb/Bungee/tree/master/resources/web)
-* [Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
+* [Video: Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
 * [Lizenz](http://scripts.sil.org/OFL)
 
 ## Hausaufgabe
