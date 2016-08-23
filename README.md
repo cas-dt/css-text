@@ -33,10 +33,11 @@ body {
 
 ### Messen
 
+* Grösse in Punkt am Screen (mit Typometer)
 * Abstand zum Laptop beim Lesen
 * Abstand zum Smartphone beim Lesen
 
-Diese Werte und die Werte für `font-size` und `line-height` tragen wir in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) ein.
+Diese Werte und jene für `font-size` und `line-height` tragen wir in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) ein.
 
 Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und den gleichen Schnitt (Georgia, normal).
 
