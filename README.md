@@ -19,10 +19,9 @@ Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird
 
 ### Einstellen
 
-Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet.
-Die länge der Zeile interessiert uns im Moment nicht. Am Smartphone ergibt sie sich von alleine, am Laptop ändern wir die Fenstergrösse von Hand.
+Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet. Die länge der Zeile interessiert uns im Moment nicht. Am Smartphone ergibt sie sich von alleine, am Laptop ändern wir die Fenstergrösse von Hand.
 
-Es reicht die Regeln für Body zu bestimmen. Der Wert wird 1:1 auf Paragraphen angewendet, Überschriften werden proportional gröser dargestellt. Sonderregeln für  `H1` und `h2` können für diese Übung vernachlässigt werden.
+Es reicht, die Eigenschaften für `<body>` zu bestimmen. Der Werte werden 1:1 auf Paragraphen angewendet, Überschriften werden proportional gröser dargestellt. Sonderregeln für  `H1` und `h2` können für diese Übung vernachlässigt werden.
 
 ```
 body {
@@ -32,6 +31,8 @@ body {
 ```
 
 ### Messen
+
+In Zweiergruppen: LeserIn versucht entspannt einige Abschnitte der Menschenrechtskonvention zu lesen. PartnerIn misst Distanz zum Screen.
 
 * Grösse in Punkt am Screen (mit Typometer)
 * Abstand zum Laptop beim Lesen
@@ -45,7 +46,7 @@ Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebu
 
 ### Links
 
-* [Video: Nick Sherman – Variable Fonts for Responsive](https://vimeo.com/123813231)
+* [Video: Nick Sherman – Variable Fonts for Responsive Design](https://vimeo.com/123813231)
 * [Size Calculator](https://sizecalc.com/)
 
 ## Übung 2: ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
@@ -104,6 +105,7 @@ Der Font ist ausführlich dokumentiert (siehe Links).
 
 * CSS-Eigenschaften für Text repetieren.
 * Text lesen: Robert Bringhurst, «The 100’000 Character Alphabet» – bis (und mit) 9.3
+* Recherchieren: ‘multiple master’, ‘optical size’, ‘open type features’ – Anton Studer wird das kurz streifen. Es schadet aber nicht, das vorzubereiten.
 
 ## Hausaufgabe auf den 21. Oktober
 
