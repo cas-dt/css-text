@@ -68,7 +68,15 @@ Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen si
 
 ### calc
 
-Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines numerischen Wertes eine Formel zuzuordnen.
+Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines fixen Wertes eine Funktion zuzuordnen, die einen Wert aufgrund von Variablen errechnet.
+
+```
+div#xxx {
+    width: calc(100% - 5em);
+}
+```
+
+Für eine detaillierte Dokumentation: [MDN – calc()](https://developer.mozilla.org/de/docs/Web/CSS/calc)
 
 ### Links
 
@@ -76,6 +84,7 @@ Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines numerisc
 * [Nathan Ford – Fluid typography with viewport units](http://artequalswork.com/posts/fluid-type/)
 * [Dillon de Voor – Mixing vw and vh in font-size](http://codepen.io/CrocoDillon/pen/fBJxu)
 * [Smashing Magazine – Truly Fluid Typography With vh And vw Units](https://www.smashingmagazine.com/2016/05/fluid-typography/)
+* [Tim Brown: Flexible typography with CSS locks](http://blog.typekit.com/2016/08/17/flexible-typography-with-css-locks/)
 * [Video: Vasilis van Gemert – Look, no media queries](https://vimeo.com/160593680)
 * [Video: Tim Brown – Typesetting Body Text for the Web](https://vimeo.com/156203722)
 * [Bram Stein – PostCSS plugin to scale values](https://github.com/bramstein/postcss-scale)
