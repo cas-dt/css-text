@@ -56,6 +56,12 @@ Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gib
 
 Vor diesem Hintergrund probieren wir einen Ansatz aus, der die Schriftgrösse in Verhältnis zur Viewportbreite bringt. Dazu muss gesagt werden, dass es sich um eine experimentelle Methode handelt, deren praktischer Nutzen fraglich ist (siehe Links). Es illustriert aber sowohl die Möglichkeiten als auch die Limitierungen der gegenwärtigen Technologie. Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
 
+```
+p {
+    font-size: calc(1em + 1vw);
+}
+```
+
 ### Viewport Units: vw, vh, vmax und vim
 
 Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
@@ -63,12 +69,6 @@ Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen si
 ### calc
 
 Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines numerischen Wertes eine Formel zuzuordnen.
-
-```
-p {
-    font-size: calc(1em + 1vw);
-}
-```
 
 ### Links
 
