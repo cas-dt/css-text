@@ -2,13 +2,23 @@
 
 Zur Vorbereitung des Themas Webfonts frischen wir unsere Kenntnisse über CSS bezüglich Schrift auf.
 
+## Repetition
+
+Vor der ersten Übung einige Punkte zur Repetition.
+
+* Definition Schriftgrösse
+* Was ist ein Geviert
+* Ober- und Unterlänge, X-Höhe, Versalhöhe
+* Pixel, em, Vererbung 
+* line-height, Zeilenhöhe, Durchschuss, Grundlinie
+
 ## Übung 1: Vermassung von Schrift am Bildschirm
 
 Es geht darum, gute Schriftgrössen für verschiedene Screens zu bestimmen. Gleichzeitig möchte ich die Aufmerksamkeit auf einige Punkte lenken, die wir im alltäglichen Gebrauch nicht bewusst wahrnehmen.
 
 Wir vergleichen in Zweiergruppen Text auf dem Smartphone und auf dem Laptop: Was ist eine angenehm zu lesende Schriftgrösse, wie lange ist die Zeile?
 
-Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist nicht standardisiert. Durch verschieden aufgelöste Screens und je nach Browser gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
+Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist (noch) nicht standardisiert. Durch verschieden aufgelöste Screens, durch Umrechnung der Auflösug durch Treiber/Betriebssystem etc. gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
 
 ### Vorbereiten
 
@@ -112,6 +122,12 @@ p {
 
 Der Font ist ausführlich dokumentiert (siehe Links).
 
+### OpenType Features in Keynote
+
+Was ihr schon immer wissen wolltet: In Keynote können OpenType Features eingesetzt werden, sie sind nur [etwas versteckt](https://twitter.com/marksimonson/status/654836119448653824).
+
+Text auswählen, `cmd t`, Zahnrad, «Typographie …» – voilà.
+
 * [David Jonathan Ross](https://djr.com/)
 * [Bungee](https://github.com/djrrb/Bungee)
 * [Bungee Dokumentation](https://github.com/djrrb/Bungee/tree/master/documentation)
@@ -120,15 +136,16 @@ Der Font ist ausführlich dokumentiert (siehe Links).
 * [Video: Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
 * [Lizenz](http://scripts.sil.org/OFL)
 
-## Hausaufgabe
+## Hausaufgabe auf 
 
 * CSS-Eigenschaften für Text repetieren.
-* Text lesen: Robert Bringhurst, «The 100’000 Character Alphabet» – bis (und mit) 9.3
-* Recherchieren: ‘multiple master’, ‘optical size’, ‘open type features’ – Anton Studer wird das kurz streifen. Es schadet aber nicht, das vorzubereiten.
+* Text lesen: Robert Bringhurst, «The State of the Art» – bis (und mit) 9.3 «Size, Color and Scale»
+
+Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was der Unterschide zwischen einem Zeichen und einer Glyphe. 9.2 und 9.3 behandeln unterschiedliche Dateiformate für Fonts. Anton Studer wird diese ebenfalls ansprechen. Es schadet aber sicher nicht, das vorzubereiten.
 
 ## Hausaufgabe auf den 21. Oktober
 
-Pixate installieren, vertraut machen mit Grundlagen.
+Pixate installieren, vertraut machen mit den Grundlagen.
 
 ### Links
 
