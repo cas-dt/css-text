@@ -44,20 +44,23 @@ Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und
 
 Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
 
-### Links
+## Übung 2: Schriftgrösse nach Viewport, ohne media query
 
-* [Video: Nick Sherman – Variable Fonts for Responsive Design](https://vimeo.com/123813231)
-* [Size Calculator](https://sizecalc.com/)
+Die länge der Zeile lässt sich der breite des Viewports anpassen, indem im Stylesheet der Eigenschaft *width* ein Prozentwert zugeordnet wird (oder indem gar keine Angabe gemacht wird).
 
-## Übung 2: ein Ansatz für Text, der sich je nach Grösse des Viewports anpasst
+Die Länge der Zeile wird für einen längeren Text in Abhängigkeit der durchschnittlichen Menge an Wörtern gewählt, die darin Platz finden sollen. So können wir davon ausgehen, dass der Text angenehm zu lesen ist. Soweit gibt es kein Problem: Wir können mit *min-width* und *max-width* eine minimale und maximale Spaltenbreite definieren.
 
-Bei der hier beschriebenen Methode handelt es sich um einen von verschiedenen experimentellen Ansätzen (siehe Links). Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
+Kompliziert wird es, wenn die Schriftgrösse sich der Grösse des Viewports anpassen soll. Solange wir nur zwischen klein (mobile) und gross (alles andere) unterscheiden, geht es noch. Aber diese grobe Einteilung führt wahrscheinlich zu unbefriedigenden Ergebnissen auf Bildschirmen, die nicht klein sind, aber den Mittelwert unter- oder überschreiten.
+
+Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gibt und wo diese eingerichtet werden müssen, lässt sich nur durch ausprobieren an verschiednen Geräten ermitteln. Aber wieviele und welche Geräte prüft man? Was ist mit den Gewohnheiten der Benutzer?
+
+Vor diesem Hintergrund probieren wir einen Ansatz aus, der die Schriftgrösse in Verhältnis zur Viewportbreite bringt. Dazu muss gesagt werden, dass es sich um eine experimentelle Methode handelt, deren praktischer Nutzen fraglich ist (siehe Links). Es illustriert aber sowohl die Möglichkeiten als auch die Limitierungen der gegenwärtigen Technologie. Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
 
 ### Viewport Units: vw, vh, vmax und vim
 
 Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
 
-### Ermittlung eines Werts mittels calc
+### calc
 
 Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines numerischen Wertes eine Formel zuzuordnen.
 
@@ -67,6 +70,8 @@ p {
 }
 ```
 
+### Links
+
 * [Vasilis van Gemert – Variable line-height](https://vasilis.nl/nerd/variable-line-height/)
 * [Nathan Ford – Fluid typography with viewport units](http://artequalswork.com/posts/fluid-type/)
 * [Dillon de Voor – Mixing vw and vh in font-size](http://codepen.io/CrocoDillon/pen/fBJxu)
@@ -75,6 +80,11 @@ p {
 * [Video: Tim Brown – Typesetting Body Text for the Web](https://vimeo.com/156203722)
 * [Bram Stein – PostCSS plugin to scale values](https://github.com/bramstein/postcss-scale)
 * [Mozilla Developer Network – Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+
+Zu sagen, CSS biete zu wenig Möglichkeiten, greift zu kurz. Jenen, die mehr über die technischen Herausforderungen im Zusammenhang mit der Darstellung von Schrift am Screen wissen möchten, empfehle ich Nick Shermans Präsentation [Variable Fonts for Responsive Design](https://vimeo.com/123813231).
+
+* [Size Calculator](https://sizecalc.com/)
+
 
 ## Übung 3: Unser erster Webfont
 
