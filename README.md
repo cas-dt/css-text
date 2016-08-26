@@ -22,7 +22,7 @@ Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird
 
 ### Vorbereiten
 
-* Datei XXXXX auf ZHdK-People-Account laden.
+* Datei font-size/index.html auf ZHdK-People-Account laden.
 * URL in Laptop- und Smartphone-Browser öffnen.
 
 *Vorsicht: URL mit `http` schreiben, nicht mit `https`. Und: `admin` hat im URL-Pfad nichts zu suchen.*
