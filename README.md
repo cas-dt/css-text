@@ -29,42 +29,42 @@ Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird
 
 ### Einstellen
 
-Schriftgrösse ändern und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet. Die länge der Zeile interessiert uns im Moment nicht. Am Smartphone ergibt sie sich von alleine, am Laptop ändern wir die Fenstergrösse von Hand.
+Schriftgrösse und Durchschuss einstellen und Text prüfen (jeweils durch Neuladen der Seite im Browser `cmd r`), bis ihr den Text als angenehm zu lesen empfindet.
 
-Es reicht, die Eigenschaften für `<body>` zu bestimmen. Der Werte werden 1:1 auf Paragraphen angewendet, Überschriften werden proportional gröser dargestellt. Sonderregeln für  `H1` und `h2` können für diese Übung vernachlässigt werden.
+Ich habe die breite der Spalte auf 30em limitiert – ihr könnt diesen Wert nach Belieben einstellen. Am Smartphone ergibt sich die Spalte von alleine. Wir betrachten nur die **vertikale Ausrichtung**.
+
+Wir interessieren uns nur für Text innerhlab von `<p>` Tags. Ihr könnt natürlich gerne auch `H1` und `h2` formatieren.
 
 ```
-body {
-    font-size: 16px; /* Für die Übung nehmen wir Pixelwerte. */
+p {
+    font-size: 16px;  /* Für die Übung nehmen wir Pixelwerte. */
     line-height: 1.2; /* Dieser Wert wird mit der Schriftgrösse multipliziert. */
 }
 ```
 
 ### Messen
 
-In Zweiergruppen: LeserIn versucht entspannt einige Abschnitte der Menschenrechtskonvention zu lesen. PartnerIn misst Distanz zum Screen.
+In Zweiergruppen: LeserIn versucht, entspannt einige Abschnitte der Menschenrechtskonvention zu lesen. PartnerIn misst Distanz zum Screen.
 
 * Grösse in Punkt am Screen (mit Typometer)
 * Abstand zum Laptop beim Lesen
 * Abstand zum Smartphone beim Lesen
 
-Diese Werte und jene für `font-size` und `line-height` tragen wir in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) ein.
+Diese Werte und jene für `font-size` und `line-height` in [diese Google Tabelle](https://docs.google.com/spreadsheets/d/1TfsKTSyCyqqWqwmckg6X9kW5HE-dZ68coE1edf_MLFQ/pubhtml) eintragen.
 
-Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und den gleichen Schnitt (Georgia, normal).
-
-Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
+Um vergleichbare Werte zu erhalten, verwenden wir die gleiche Schriftfamilie und den gleichen Schnitt (Georgia normal).
 
 ## Übung 2: Schriftgrösse nach Viewport, ohne media query
 
 Die länge der Zeile lässt sich der breite des Viewports anpassen, indem im Stylesheet der Eigenschaft *width* ein Prozentwert zugeordnet wird (oder indem gar keine Angabe gemacht wird).
 
-Die Länge der Zeile wird für einen längeren Text in Abhängigkeit der durchschnittlichen Menge an Wörtern gewählt, die darin Platz finden sollen. So können wir davon ausgehen, dass der Text angenehm zu lesen ist. Soweit gibt es kein Problem: Wir können mit *min-width* und *max-width* eine minimale und maximale Spaltenbreite definieren.
+Wir wissen: Die Länge der Zeile wird für einen längeren Text in Abhängigkeit zur durchschnittlichen Menge an Wörtern/Zeichen gewählt, die darin Platz finden sollen. So können wir davon ausgehen, dass der Text angenehm zu lesen ist. Soweit gibt es kein Problem: Wir können mit *min-width* und *max-width* eine minimale und maximale Spaltenbreite definieren.
 
-Kompliziert wird es, wenn die Schriftgrösse sich der Grösse des Viewports anpassen soll. Solange wir nur zwischen klein (mobile) und gross (alles andere) unterscheiden, geht es noch. Aber diese grobe Einteilung führt wahrscheinlich zu unbefriedigenden Ergebnissen auf Bildschirmen, die nicht klein sind, aber den Mittelwert unter- oder überschreiten.
+Kompliziert wird es, wenn die Schriftgrösse sich der Grösse des Viewports anpassen soll. Solange wir nur zwischen klein (mobile) und gross (alles andere) unterscheiden, geht es noch. Aber diese grobe Einteilung führt wahrscheinlich zu unbefriedigenden Ergebnissen an Bildschirmen, die nicht klein sind, aber den Mittelwert unter- oder überschreiten.
 
-Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gibt und wo diese eingerichtet werden müssen, lässt sich nur durch ausprobieren an verschiednen Geräten ermitteln. Aber wieviele und welche Geräte prüft man? Was ist mit den Gewohnheiten der Benutzer?
+Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gibt und wo diese eingerichtet werden müssen, lässt sich nur durch Ausprobieren an verschiednen Geräten ermitteln. Aber wieviele und welche Geräte prüft man? Dieses Thema ist noch längst nicht befriedigend gelöst.
 
-Vor diesem Hintergrund probieren wir einen Ansatz aus, der die Schriftgrösse in Verhältnis zur Viewportbreite bringt. Dazu muss gesagt werden, dass es sich um eine experimentelle Methode handelt, deren praktischer Nutzen fraglich ist (siehe Links). Es illustriert aber sowohl die Möglichkeiten als auch die Limitierungen der gegenwärtigen Technologie. Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
+Vor diesem Hintergrund probieren wir einen Ansatz aus, der die Schriftgrösse in Verhältnis zur Breite des Viewport bringt. Dazu muss gesagt werden, dass es sich um eine experimentelle Methode handelt, deren praktischer Nutzen fraglich ist (siehe Links). Es mag dazu dienen, sowohl die Möglichkeiten als auch die Limitierungen der gegenwärtigen Technologie zu illustrieren – vielleicht auch den verzweifelten Eifer, mit dem nach Lösungen gesucht wird, egal wie abwegig. Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
 
 ```
 p {
@@ -74,11 +74,11 @@ p {
 
 ### Viewport Units: vw, vh, vmax und vim
 
-Die sog. ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
+Die sogenannten ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie beziehen sich auf die Grösse des Viewports: *vw* steht für ‘viewport width’ (Fensterbreite), *vh* für ‘viewport height’ (Fensterhöhe), *vmin* wird mit *vw* oder *vh* ersetzt, je nachdem welcher Wert kleiner ist, *vmax* mit dem jeweils grösseren Wert. Dem Wert wird eine ganze Zahl zwischen 1 und 100 vorangestellt, 1*vw* ist 1% der Fensterbreite, 100*vw* ist die ganze Breite des Viewports.
 
 ### calc
 
-Seit kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines fixen Wertes eine Funktion zuzuordnen, die einen Wert aufgrund von Variablen errechnet.
+Seit Kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines fixen Wertes eine Funktion zuzuordnen, die einen Wert aufgrund von Variablen errechnet.
 
 ```
 div#xxx {
@@ -100,14 +100,22 @@ Für eine detaillierte Dokumentation: [MDN – calc()](https://developer.mozilla
 * [Bram Stein – PostCSS plugin to scale values](https://github.com/bramstein/postcss-scale)
 * [Mozilla Developer Network – Calc](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
 
-Zu sagen, CSS biete zu wenig Möglichkeiten, greift zu kurz. Jenen, die mehr über die technischen Herausforderungen im Zusammenhang mit der Darstellung von Schrift am Screen wissen möchten, empfehle ich Nick Shermans Präsentation [Variable Fonts for Responsive Design](https://vimeo.com/123813231).
+Zu sagen, CSS biete zu wenig Möglichkeiten, greift etwas kurz. Jenen, die mehr über die technischen Herausforderungen im Zusammenhang mit der Darstellung von Schrift am Screen wissen möchten, empfehle ich Nick Shermans Präsentation [Variable Fonts for Responsive Design](https://vimeo.com/123813231).
 
 * [Size Calculator](https://sizecalc.com/)
 
-
 ## Übung 3: Unser erster Webfont
 
-David Jonathan Ross hat vor kurzem die Schrift Bungee unter einer Open Source Lizenz veröffentlicht (und ausserdem als Google Font). Zur Entspannung versuchen wir, die Schrift herunterzuladen und in eine Website einzubauen.
+David Jonathan Ross hat kürzlich die Schrift Bungee unter einer Open Source Lizenz veröffentlicht (und ausserdem als Google Font). Zur Entspannung versuchen wir, die Schrift herunterzuladen und in eine Website einzubauen.
+
+```
+@font-face {
+    font-family: 'my font';
+    src: url('ordner/datei.woff2') format('woff2');
+
+p { font-family: 'my font', helvetica, sans-serif;
+}
+```
 
 Es geht nicht darum, zu verstehen, was wie funktioniert, sondern darum, das Ding zum Laufen zu bringen.
 
@@ -138,9 +146,10 @@ Text auswählen, `cmd t`, Zahnrad, «Typographie …» – voilà.
 
 ## Hausaufgabe auf den 23. September
 
-* Generell auf Schriften im Web achten. Mit den *Dev Tools* nachschauen was es ist.
-* CSS-Eigenschaften für Text repetieren.
+* Generell auf Schriften im Web achten. Mit den *Dev Tools* nachschauen, was es ist.
+* CSS-Eigenschaften für Text repetieren, bis es reicht, z.B. in [CodePen](http://codepen.io/).
 * Text lesen: Robert Bringhurst, «The State of the Art» – bis (und mit) 9.3 «Size, Color and Scale»
+* Den Links auf dieser Seite folgen.
 
 Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was der Unterschide zwischen einem Zeichen und einer Glyphe. 9.2 und 9.3 behandeln unterschiedliche Dateiformate für Fonts. Anton Studer wird diese ebenfalls ansprechen. Es schadet aber sicher nicht, das vorzubereiten.
 
@@ -148,9 +157,14 @@ Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was
 
 Pixate installieren, vertraut machen mit den Grundlagen.
 
-### Pxate Links
+### Pixate Links
 
 * [Pixate](http://pixate.com)
 * [Introduction](http://help.pixate.com/knowledgebase/articles/461798-1-introduction)
 * [Concepts to understand before using Pixate](http://help.pixate.com/knowledgebase/articles/461806-2-high-level-concepts)
 * [Video Tutorials](http://www.pixate.com/education/video-tutorials/)
+
+## Last but not least (liest?)
+
+Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
+
