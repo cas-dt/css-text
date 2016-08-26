@@ -143,11 +143,11 @@ Text auswählen, `cmd t`, Zahnrad, «Typographie …» – voilà.
 
 Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was der Unterschide zwischen einem Zeichen und einer Glyphe. 9.2 und 9.3 behandeln unterschiedliche Dateiformate für Fonts. Anton Studer wird diese ebenfalls ansprechen. Es schadet aber sicher nicht, das vorzubereiten.
 
-## Hausaufgabe auf den 21. Oktober
+## Hausaufgabe auf den 8. Oktober
 
 Pixate installieren, vertraut machen mit den Grundlagen.
 
-### Links
+### Pxate Links
 
 * [Pixate](http://pixate.com)
 * [Introduction](http://help.pixate.com/knowledgebase/articles/461798-1-introduction)
