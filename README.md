@@ -136,8 +136,9 @@ Text auswählen, `cmd t`, Zahnrad, «Typographie …» – voilà.
 * [Video: Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
 * [Lizenz](http://scripts.sil.org/OFL)
 
-## Hausaufgabe auf 
+## Hausaufgabe auf den 23. September
 
+* Generell auf Schriften im Web achten. Mit den *Dev Tools* nachschauen was es ist.
 * CSS-Eigenschaften für Text repetieren.
 * Text lesen: Robert Bringhurst, «The State of the Art» – bis (und mit) 9.3 «Size, Color and Scale»
 
