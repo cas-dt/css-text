@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <link rel="stylesheet" href="bungee.css">
+    <style>
+      body {
+        font-size: 24px; /* Grundeinheit für Angaben in em */
+      }
+      .bungee { /* override bungee.css */
+        font-size: calc( 1em + 4vw);
+      }
+      .shade,.inline,.regular,.outline {
+        padding-bottom: 0.5em; /* Outline wird sonst angeschnitten */
+        /* spacing and kerning */
+        -moz-font-feature-settings: "vkrn", "vpal";
+        -webkit-font-feature-settings: "vkrn", "vpal";
+        font-feature-settings: "vkrn", "vpal";}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bungee.js"></script>
+  </head>
+  <body>
+    <figure class="bungee vertical regular-0b5ba8 inline-55a5fe outline-ffffff shade-0b5ba8-20 background-ffffff">PJ Harvey<figure>
+  </body>
+</html>
