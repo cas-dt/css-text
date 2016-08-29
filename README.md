@@ -205,4 +205,4 @@ Pixate installieren, vertraut machen mit den Grundlagen.
 
 ## Last but not least (liest?)
 
-Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphone auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw)).
+Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphone auf Taschebuch legen und vergleichen. – Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw)
