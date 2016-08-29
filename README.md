@@ -84,7 +84,7 @@ Die sogenannten ‘Viewport Units’ sind eine neue Masseinheit in CSS. Sie bezi
 Seit Kurzem gibt es die Möglichkeit, einer CSS-Eigenschaft statt eines fixen Wertes eine Funktion zuzuordnen, die einen Wert aufgrund von Variablen errechnet.
 
 ```
-div#xxx {
+#container {
     width: calc(100% - 5em);
 }
 ```
@@ -114,15 +114,20 @@ David Jonathan Ross hat kürzlich die Schrift Bungee unter einer Open Source Liz
 ```
 @font-face {
     font-family: 'my font';
-    src: url('ordner/datei.woff2') format('woff2');
+    src: url('ordner/datei.woff2') format('woff2'),
+    src: url('ordner/datei.woff') format('woff');
 
 p { font-family: 'my font', helvetica, sans-serif;
 }
 ```
 
-Es geht nicht darum, zu verstehen, was wie funktioniert, sondern darum, das Ding zum Laufen zu bringen.
+Mit @font-face wird Name für den zu verwendenden Font definiert. Dieser kann frei gewählt werden.
 
-Es braucht zwei CSS Eigenschaften, um Text von oben nach unten zu schreiben: Eine für die vertikale Ausrichtung der Zeile, eine für die vertikale Ausrichtung der Buchstaben.
+Dazu kommt der Pfad zur Datei, die den Font enthält und die Angabe des Formats dieser Datei. Wenn ältere Browserversionen unterstützt serden müssen, können verschiedene Quellen mit Dateien in unterschiedlichen Fomraten angegeben werden.
+
+### Vertikal laufender Text
+
+Für den Einsatz der Bungee müssen wir im Stylesheet die Orientierung der Zeile und der Buchstaben definieren.
 
 ```
 p {
@@ -146,6 +151,37 @@ Text auswählen, `cmd t`, Zahnrad, «Typographie …» – voilà.
 * [Bungee.js – Script zur Konfiguration der Schnitte etc.](https://github.com/djrrb/Bungee/tree/master/resources/web)
 * [Video: Präsentation Bungee](http://typotalks.com/de/videos/hochs-und-tiefs-der-vertikalen-typografie/)
 * [Lizenz](http://scripts.sil.org/OFL)
+
+## Silbentrennung mit HTML/CSS
+
+Die Technologie zur Silbentrennung ist noch nicht sehr ausgereift: Wenig Browser können es, und die, die es tun, können es nur in wenigen Sprachen.
+
+```
+<html lang="de"> oder <p lang="en"> <!-- Sprache definieren -->
+
+p {
+    hyphens: auto;             /* schaltet Silbentrennung an */
+    -webkit-hyphens: auto;     /* für Safari/Chrome          */
+    -ms-hyphens: auto;         /* für Microsoft Browser      */
+}
+```
+
+### Manuelle Silbentrennung
+
+Durch das Einfügen der «HTML-entities» `&hyphen;` oder `&shy;` lässt sich von Hand einstellen, wo ein Wort getrennt werden soll. Zustätzlich ist in CSS noch die Angabe `hyphen: manual;` (oder auto) notwendig.
+
+### Notlösung
+
+```
+    overflow-wrap: break-word; /* bricht überlange Wörter um */
+```
+
+# Lings Silbentrennung
+
+* [MDN – CSS Eigenschaft ‘hyphens’](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
+* [MDN – Umbruch überlanger Wörter](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)
+* [HTML Entities](https://dev.w3.org/html5/html-author/charref
+)
 
 ## Hausaufgabe auf den 23. September
 
