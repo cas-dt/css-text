@@ -130,7 +130,7 @@ p {
 
 Der Font ist ausführlich dokumentiert (siehe Links).
 
-### OpenType Features in Keynote
+## OpenType Features in Keynote
 
 Was ihr schon immer wissen wolltet: In Keynote können OpenType Features eingesetzt werden, sie sind nur [etwas versteckt](https://twitter.com/marksimonson/status/654836119448653824).
 
@@ -166,5 +166,4 @@ Pixate installieren, vertraut machen mit den Grundlagen.
 
 ## Last but not least (liest?)
 
-Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphon auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw).
-
+Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphone auf Taschebuch legen und vergleichen (Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw)).
