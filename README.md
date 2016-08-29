@@ -123,7 +123,7 @@ p { font-family: 'my font', helvetica, sans-serif;
 
 Mit @font-face wird Name für den zu verwendenden Font definiert. Dieser kann frei gewählt werden.
 
-Dazu kommt der Pfad zur Datei, die den Font enthält und die Angabe des Formats dieser Datei. Wenn ältere Browserversionen unterstützt serden müssen, können verschiedene Quellen mit Dateien in unterschiedlichen Formaten angegeben werden.
+Dazu kommt der Pfad zur Datei, die den Font enthält und die Angabe des Formats dieser Datei. Wenn ältere Browserversionen unterstützt werden müssen, können verschiedene Quellen mit Dateien in unterschiedlichen Formaten angegeben werden.
 
 ### Vertikal laufender Text
 
@@ -131,8 +131,8 @@ Für den Einsatz der Bungee müssen wir im Stylesheet die Orientierung der Zeile
 
 ```
 p {
-    writing-mode: vertical-rl
-    text-orientation: upright
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 }
 ```
 
@@ -176,7 +176,7 @@ Durch das Einfügen der «HTML-entities» `&hyphen;` oder `&shy;` lässt sich 
     overflow-wrap: break-word; /* bricht überlange Wörter um */
 ```
 
-# Lings Silbentrennung
+# Links Silbentrennung
 
 * [MDN – CSS Eigenschaft ‘hyphens’](https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens)
 * [MDN – Umbruch überlanger Wörter](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)
@@ -190,7 +190,7 @@ Durch das Einfügen der «HTML-entities» `&hyphen;` oder `&shy;` lässt sich 
 * Text lesen: Robert Bringhurst, «The State of the Art» – bis (und mit) 9.3 «Size, Color and Scale»
 * Den Links auf dieser Seite folgen.
 
-Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was der Unterschide zwischen einem Zeichen und einer Glyphe. 9.2 und 9.3 behandeln unterschiedliche Dateiformate für Fonts. Anton Studer wird diese ebenfalls ansprechen. Es schadet aber sicher nicht, das vorzubereiten.
+Der Unterschied zwischen ASCII und Unicode sollte verstanden werden, ebenso, was der Unterschiede zwischen einem Zeichen und einer Glyphe. 9.2 und 9.3 behandeln unterschiedliche Dateiformate für Fonts. Anton Studer wird diese ebenfalls ansprechen. Es schadet aber sicher nicht, das vorzubereiten.
 
 ## Hausaufgabe auf den 8. Oktober
 
