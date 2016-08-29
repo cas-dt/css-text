@@ -21,7 +21,7 @@ Es geht darum, gute Schriftgrössen für verschiedene Screens zu bestimmen. Glei
 
 Wir vergleichen in Zweiergruppen Text auf dem Smartphone und auf dem Laptop: Was ist eine angenehm zu lesende Schriftgrösse, wie lange ist die Zeile?
 
-Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist (noch) nicht standardisiert. Durch verschieden aufgelöste Screens, durch Umrechnung der Auflösug durch Treiber/Betriebssystem etc. gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
+Wichtig zu wissen: In welcher Grösse Schrift und Bild am Screen ausgegeben wird, ist (noch) nicht standardisiert. Durch verschieden aufgelöste Screens, durch Umrechnung der Auflösung durch Treiber/Betriebssystem etc. gibt es starke Abweichungen. Das heisst: alles muss immer ausprobiert werden.
 
 ### Vorbereiten
 
@@ -36,7 +36,7 @@ Schriftgrösse und Durchschuss einstellen und Text prüfen (jeweils durch Neulad
 
 Ich habe die breite der Spalte auf 30em limitiert – ihr könnt diesen Wert nach Belieben einstellen. Am Smartphone ergibt sich die Spalte von alleine. Wir betrachten nur die **vertikale Ausrichtung**.
 
-Wir interessieren uns nur für Text innerhlab von `<p>` Tags. Ihr könnt natürlich gerne auch `H1` und `h2` formatieren.
+Wir interessieren uns nur für Text innerhalb von `<p>` Tags. Ihr könnt natürlich gerne auch `H1` und `h2` formatieren.
 
 ```
 p {
@@ -65,7 +65,7 @@ Wir wissen: Die Länge der Zeile wird für einen längeren Text in Abhängigkeit
 
 Kompliziert wird es, wenn die Schriftgrösse sich der Grösse des Viewports anpassen soll. Solange wir nur zwischen klein (mobile) und gross (alles andere) unterscheiden, geht es noch. Aber diese grobe Einteilung führt wahrscheinlich zu unbefriedigenden Ergebnissen an Bildschirmen, die nicht klein sind, aber den Mittelwert unter- oder überschreiten.
 
-Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gibt und wo diese eingerichtet werden müssen, lässt sich nur durch Ausprobieren an verschiednen Geräten ermitteln. Aber wieviele und welche Geräte prüft man? Dieses Thema ist noch längst nicht befriedigend gelöst.
+Das definieren von Zwischenschritten ist aufwendig: Wie viele Breakpoints es gibt und wo diese eingerichtet werden müssen, lässt sich nur durch Ausprobieren an verschiedenen Geräten ermitteln. Aber wieviele und welche Geräte prüft man? Dieses Thema ist noch längst nicht befriedigend gelöst.
 
 Vor diesem Hintergrund probieren wir einen Ansatz aus, der die Schriftgrösse in Verhältnis zur Breite des Viewport bringt. Dazu muss gesagt werden, dass es sich um eine experimentelle Methode handelt, deren praktischer Nutzen fraglich ist (siehe Links). Es mag dazu dienen, sowohl die Möglichkeiten als auch die Limitierungen der gegenwärtigen Technologie zu illustrieren – vielleicht auch den verzweifelten Eifer, mit dem nach Lösungen gesucht wird, egal wie abwegig. Fakt ist, dass die bestehenden Möglichkeiten von CSS nach wie vor unzureichend sind, auch wenn sich in den letzten Jahren viel getan hat. Um über neue Entwicklungen informiert zu werden, lohnt es sich, Leuten wie [Erik Blokland](@letterror), [Just van Rossum](@justvanrossum), [Tim](@nicewebtype) [Brown](@timbrown), [Bram Stein](@bram_stein), [Nina Stössinger](@ninastoessinger) und [Nick Sherman](@NickSherman) per Twitter zu folgen.
 
@@ -123,7 +123,7 @@ p { font-family: 'my font', helvetica, sans-serif;
 
 Mit @font-face wird Name für den zu verwendenden Font definiert. Dieser kann frei gewählt werden.
 
-Dazu kommt der Pfad zur Datei, die den Font enthält und die Angabe des Formats dieser Datei. Wenn ältere Browserversionen unterstützt serden müssen, können verschiedene Quellen mit Dateien in unterschiedlichen Fomraten angegeben werden.
+Dazu kommt der Pfad zur Datei, die den Font enthält und die Angabe des Formats dieser Datei. Wenn ältere Browserversionen unterstützt serden müssen, können verschiedene Quellen mit Dateien in unterschiedlichen Formaten angegeben werden.
 
 ### Vertikal laufender Text
 
@@ -168,7 +168,7 @@ p {
 
 ### Manuelle Silbentrennung
 
-Durch das Einfügen der «HTML-entities» `&hyphen;` oder `&shy;` lässt sich von Hand einstellen, wo ein Wort getrennt werden soll. Zustätzlich ist in CSS noch die Angabe `hyphen: manual;` (oder auto) notwendig.
+Durch das Einfügen der «HTML-entities» `&hyphen;` oder `&shy;` lässt sich von Hand einstellen, wo ein Wort getrennt werden soll. Zusätzlich ist in CSS noch die Angabe `hyphen: manual;` (oder auto) notwendig.
 
 ### Notlösung
 
@@ -205,4 +205,4 @@ Pixate installieren, vertraut machen mit den Grundlagen.
 
 ## Last but not least (liest?)
 
-Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphone auf Taschebuch legen und vergleichen. – Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw)
+Ein Tipp zum Einschätzen der Schriftgrösse auf Smartphones: Smartphone auf Taschenbuch legen und vergleichen. – Quelle: [Interview mit Erik Blokland](https://www.youtube.com/watch?v=EDG14YhYrGw)
