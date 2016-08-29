@@ -2,15 +2,18 @@
 
 Zur Vorbereitung des Themas Webfonts frischen wir unsere Kenntnisse über CSS bezüglich Schrift auf.
 
-## Repetition
+## Terminologie
 
-Vor der ersten Übung einige Punkte zur Repetition.
+Eine unvollständige Liste von Begriffen, die im Zusammenhang mit dem Thema Schrift am Screen verstanden werden müssen.
 
-* Definition Schriftgrösse
-* Was ist ein Geviert
-* Ober- und Unterlänge, X-Höhe, Versalhöhe
-* Pixel, em, Vererbung 
-* line-height, Zeilenhöhe, Durchschuss, Grundlinie
+* Font ≠ Schrift (-familie) /  Schnitt
+* Schriftgrösse, Geviert
+* Grundlinie, Oberlänge, Unterlänge, x-Höhe, Versalhöhe
+* line-height, Zeilenhöhe, Durchschuss
+* px, em, Vererbung von em
+* Kerning, spationieren, ausgleichen, sperren
+* Webfonts / Websafe Fonts
+* Zeichen ≠ Glyphe
 
 ## Übung 1: Vermassung von Schrift am Bildschirm
 
