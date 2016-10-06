@@ -32,9 +32,7 @@ p { /* low-level */
 
 Dies ist wahrscheinlich der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
 
-Überschriften (HTML-Tags h1–h6) werden vom Browser automatisch fett gezeichnet. Gibt es nur einen Schnitt und wird im Stylesheet keine Definition des Schriftgewichtes, so zeichnen Browser auch im Jahre 2016 noch eine Umrisslinie um die Zeichen.
-
-Dies ist ein Punkt, den Front End Entwickler selten von sich aus bemerken, darum immer prüfen.
+Überschriften (HTML-Tags h1–h6) werden vom Browser automatisch fett gezeichnet. Gibt es nur einen Schnitt und keine Definition des Schriftgewichtes im Stylesheet, so zeichnen Browser auch im Jahre 2016 noch eine Umrisslinie um die Zeichen. Dies ist ein Punkt, den Front End Entwickler selten von sich aus bemerken, darum immer prüfen.
 
 ```
 h2 { font-weight: normal; }
