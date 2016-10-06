@@ -51,6 +51,7 @@ Es gibt dieses Problem natürlich auch im Zusammenhang mit falschen Kursiven. Te
 * [FontFont – OpenType User Guide](https://www.fontfont.com/staticcontent/downloads/FF_OT_User_Guide.pdf)
 * [Microsoft – OpenType Feature List](https://www.microsoft.com/typography/otspec/featurelist.htm)
 * [MSDN – Using the Whole Font](https://blogs.msdn.microsoft.com/ie/2012/01/09/css-corner-using-the-whole-font/)
+* [Prevent hotlinking with a .htaccess file](https://mediatemple.net/community/products/dv/204644230/prevent-hotlinking-with-a-htaccess-file)
 
 ### Nicht so Technisches
 
