@@ -4,6 +4,30 @@
 
 OpenType-Features lassen sich aus Stylesheets ansprechen. Es gibt zwei Möglichkeiten (‘high-’ und ‘klow-level’ dafür, wer es genau wissen will, sei auf den unten angegebenen Artikel von Typotheque verwiesen.
 
+### Beispiel Medievalziffern
+
+```
+p { /* high-level */
+    font-variant-numeric: oldstyle-nums;
+}
+
+p { /* low-level */
+    font-feature-settings: 'onum';
+}
+```
+
+### Beispiel Kapitälchen
+
+```
+p { /* high-level */
+    font-variant: small-caps;
+}
+
+/* low-level */
+   font-feature-settings: 'smcp'; 
+}
+```
+
 * [Typotheque – OpenType features in CSS](https://www.typotheque.com/articles/opentype_features_in_css)
 
 ## Faux bold
@@ -30,5 +54,4 @@ Dies ist der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
 ## Webfonts die Herr Renner im Oktober 2016 interessant fand
 
 * [Fira sans](https://mozilla.github.io/Fira/)
-* [Input](http://input.fontbureau.com/info/)
-
+* [Input](http://input.fontbureau.com/info/) <— und es ist nicht einmal ein Webfont
