@@ -2,19 +2,7 @@
 
 ## OpenType features in CSS
 
-OpenType-Features lassen sich aus Stylesheets ansprechen. Es gibt zwei Möglichkeiten (‘high-’ und ‘klow-level’ dafür, wer es genau wissen will, sei auf den unten angegebenen Artikel von Typotheque verwiesen.
-
-### Beispiel Medievalziffern
-
-```
-p { /* high-level */
-    font-variant-numeric: oldstyle-nums;
-}
-
-p { /* low-level */
-    font-feature-settings: 'onum';
-}
-```
+OpenType-Features lassen sich aus Stylesheets ansprechen. Es gibt zwei Möglichkeiten (‘high-’ und ‘low-level’) dafür, wer es genau wissen will, sei auf [diesen Artikel](https://www.typotheque.com/articles/opentype_features_in_css)), erschienen bei Typotheque verwiesen.
 
 ### Beispiel Kapitälchen
 
@@ -28,13 +16,31 @@ p { /* high-level */
 }
 ```
 
-* [Typotheque – OpenType features in CSS](https://www.typotheque.com/articles/opentype_features_in_css)
+### Beispiel Medievalziffern
+
+```
+p { /* high-level */
+    font-variant-numeric: oldstyle-nums;
+}
+
+p { /* low-level */
+    font-feature-settings: 'onum';
+}
+```
 
 ## Faux bold
 
-Dies ist der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
+Dies ist wahrscheinlich der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
 
-Überschriften (HTML-Tags h1–h6) werden vom Browser automatisch fett gezeichnet. Gibt es nur einen Schnitt und wird im Stylesheet keine Definition des Schriftgewichtes, so zeichnen Browser auch ad. 2016 eine Umrisslinie um die Zeichen.
+Überschriften (HTML-Tags h1–h6) werden vom Browser automatisch fett gezeichnet. Gibt es nur einen Schnitt und wird im Stylesheet keine Definition des Schriftgewichtes, so zeichnen Browser auch im Jahre 2016 noch eine Umrisslinie um die Zeichen.
+
+Dies ist ein Punkt, den Front End Entwickler selten von sich aus bemerken, darum immer prüfen.
+
+```
+h2 { font-weight: normal; }
+```
+
+Es gibt dieses Problem natürlich auch im Zusammenhang mit falschen Kursiven. Technische Details gibt es in diesem [A-List-Apart-Artikel](http://alistapart.com/article/say-no-to-faux-bold).
 
 ## Links
 
@@ -46,7 +52,7 @@ Dies ist der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
 * [Microsoft – OpenType Feature List](https://www.microsoft.com/typography/otspec/featurelist.htm)
 * [MSDN – Using the Whole Font](https://blogs.msdn.microsoft.com/ie/2012/01/09/css-corner-using-the-whole-font/)
 
-### Nicht so technisches
+### Nicht so Technisches
 
 * [Gerry Leonidas – Typefaces for Screens](https://vimeo.com/108336615)
 * [Typewolf](http://typewolf.com)
@@ -54,4 +60,6 @@ Dies ist der häufigste Fehler, der im Zusammenhang mit Webfonts gemacht wird.
 ## Webfonts die Herr Renner im Oktober 2016 interessant fand
 
 * [Fira sans](https://mozilla.github.io/Fira/)
-* [Input](http://input.fontbureau.com/info/) <— und es ist nicht einmal ein Webfont
+* [Nitti Mostro](http://nittimostro.webtype.com/)
+* [Action](http://action.commercialtype.com/)
+* [Input](http://input.fontbureau.com/info/) <— nicht primär ein Webfont
